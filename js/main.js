@@ -11,8 +11,8 @@ function parsebeatpattern(str, repeat) {
 function Player(beatpattern) {
     var delay = 400;
     var position = 0;
-    var tick = new Audio("media/tick.ogg");
-    var tock = new Audio("media/tock.ogg");
+    var tick = $("#tick")[0]
+    var tock = $("#tock")[0]
     this.reset = function() {
         position = 0;
     }
