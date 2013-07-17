@@ -45,7 +45,6 @@ function MetrinomeRunner(player) {
 }
 
 $(document).ready(function(){
-    alert($("#repeat")[0].checked)
     var beatpatternfield = $("#beatpattern");
     var beatpattern = parsebeatpattern(beatpatternfield.val(), $("#repeat")[0].checked);
     var runner = new MetrinomeRunner(new Player(beatpattern));
