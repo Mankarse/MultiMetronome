@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
- <head><title>MultiMetronome</title></head>
+ <head><meta charset="UTF-8"><title>MultiMetronome</title></head>
  <audio id="tick">
    <source src="media/tick.ogg" type="audio/ogg">
    <source src="media/tick.wav" type="audio/wav">
@@ -12,10 +12,10 @@
    <source src="media/tock.mp3" type="audio/mpeg">
  </audio>
  <body>
-  <p>Multi Metronome: Enter the beat pattern</p>
+  <p>Multi Metronome</p>
   <form>
-    <input id="beatpattern" type="text" value="4"><br>
-    <input id="repeat" type="checkbox" checked="checked">Repeat<br>
+    Beat pattern: <input id="beatpattern" type="text" value="4"> <input id="repeat" type="checkbox" checked="checked">Repeat<br>
+    ♩ = <input id="bpm" type="text" value="100"> BPM<br>
     <input id="playbutton" type="button" value="Play">
   </form>
  </body>
